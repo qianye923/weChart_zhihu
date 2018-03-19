@@ -1,0 +1,26 @@
+<view>
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item.image}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+    </swiper>
+  </view>
+
+  <view class="small_title">{{todyTitle}}</view>
+  <view class="zh_nav">
+        <navigator wx:for="{{DataState}}" url="../detail/detail?id={{item.id}}">
+            <block>
+                <view class="item">
+                    <view class="item_left"> {{item.title}}</view>
+                    <!-- <view> {{item.images[0]}}</view> -->
+                     <view class="item_right"> <image src="{{item.images[0]}}"></image></view>
+                </view>
+            </block>
+        </navigator>
+  </view>
+  
+</view>
