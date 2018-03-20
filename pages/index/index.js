@@ -8,8 +8,8 @@ Page({
     // 指示点
     indicatorDots:true,
     autoplay: true,
-    interval: 5000,
-    duration: 1000,
+    interval: 1000,
+    duration: 500, 
     todyTitle: "今日新闻",
     //首页的加载的内容
     DataState:[]

@@ -1,3 +1,6 @@
+page{
+ background-color:pink;
+}
 swiper{
   height:200px;
 }
@@ -11,22 +14,22 @@ image{
 }
 
 .zh_nav .item{
+    background-color:#fff;
     display:flex;
-    width:90%;
-    margin:10px 0px;
-    justify-content:space-around
+    width:95%;
+    border-radius: 3px;
+    margin:5px 7px 5px;
+    padding:5px ;
+    box-sizing:border-box;
 }
-
-.item{
-   border:1px solid gray;
-   border-radius: 3px;
+navigator{
+   justify-content:space-around
 }
 .item_left{
   flex:3
 }
 .item_right{
   flex:1;
-  height:100px
 }
 .item image{
   height:80px;
